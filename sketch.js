@@ -29,7 +29,7 @@ function draw() {
       && wall.x - car.x < wall.width/2 + car.width/2*/ 
 
   //if (((car.x - wall.x) <= (wall.width/2 + car.width/2)) && ((wall.x - car.x) <= (wall.width/2 + car.width/2)) && (100 <= deformation <= 180)) {
-    if (deformation < 180) && (deformation > 100) {
+    if ((deformation < 180) && (deformation > 100)) {
       car.velocityX = 0;
       car.shapeColor = "yellow";
     }
