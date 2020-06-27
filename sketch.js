@@ -8,8 +8,8 @@ function setup() {
 
   deformation = (0.5 * speed * weight * speed) / 22500
 
-  car = createSprite(50, 200, 25, 25);
-  wall = createSprite(1500, 200, 20, height/2);
+  car = createSprite(50, 200, 50, 50);
+  wall = createSprite(1500, 200, 60, height/2);
 
   car.velocityX = speed;
 }
