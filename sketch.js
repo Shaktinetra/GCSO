@@ -17,17 +17,17 @@ function setup() {
 function draw() {
   background(0); 
   
-  if (car.x - wall.x <= car.width/2 + wall.width/2 && wall.x - car.x <= car.width/2 + wall.width/2 && deformation < 100) {
+  if (((car.x - wall.x) <= (car.width/2 + wall.width/2)) && ((wall.x - car.x) <= (car.width/2 + wall.width/2)) && (deformation < 100)) {
     car.velocityX = 0;
     car.shapeColor = "green";
   }
 
-  if (wall.x - car.x <= wall.width/2 + car.width/2 && car.x - wall.x <= wall.width/2 + car.width/2 && 100 <= deformation <= 180 ) {
+  if (((wall.x - car.x) <= (wall.width/2 + car.width/2)) && ((car.x - wall.x) <= (wall.width/2 + car.width/2)) && (100 <= deformation <= 180)) {
     car.velocityX = 0;
     car.shapeColor = "yellow";
     }
 
-  if (wall.x - car.x <= wall.width/2 + car.width/2 && car.x - wall.x <= wall.width/2 + car.width/2 && deformation > 180) {
+  if (((wall.x - car.x) <= (wall.width/2 + car.width/2)) && ((car.x - wall.x) <= (wall.width/2 + car.width/2)) && (deformation > 180)) {
     car.velocityX = 0;
     car.shapeColor = "red";
     }
