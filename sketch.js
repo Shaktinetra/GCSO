@@ -17,22 +17,27 @@ function setup() {
 function draw() {
   background(0); 
   
-  if (((car.x - wall.x) <= (wall.width/2 + car.width/2)) && ((wall.x - car.x) <= (wall.width/2 + car.width/2)) && (deformation < 100)) {
-    car.velocityX = 0;
-    car.shapeColor = "green";
+  //if (((car.x - wall.x) <= (wall.width/2 + car.width/2)) && ((wall.x - car.x) <= (wall.width/2 + car.width/2)) && (deformation < 100)) {
+    if (wall.x = car.x < 9car.width + wall.width)/2) {
+      
+      if (deformation > 180) {
+        car.velocityX = 0;
+        car.shapeColor = "red";
   }
   
  // if (car.x - wall.x < wall.width/2 + car.width/2 
    //   && wall.x - car.x < wall.width/2 + car.width/2 
 
-  if (((car.x - wall.x) <= (wall.width/2 + car.width/2)) && ((wall.x - car.x) <= (wall.width/2 + car.width/2)) && (100 <= deformation <= 180)) {
-    car.velocityX = 0;
-    car.shapeColor = "yellow";
+  //if (((car.x - wall.x) <= (wall.width/2 + car.width/2)) && ((wall.x - car.x) <= (wall.width/2 + car.width/2)) && (100 <= deformation <= 180)) {
+    if (deformation < 180 && deformation > 100) {
+      car.velocityX = 0;
+      car.shapeColor = "yellow";
     }
 
-  if (((car.x - wall.x) <= (wall.width/2 + car.width/2)) && ((wall.x - car.x) <= (wall.width/2 + car.width/2)) && (deformation > 180)) {
-    car.velocityX = 0;
-    car.shapeColor = "red";
+  //if (((car.x - wall.x) <= (wall.width/2 + car.width/2)) && ((wall.x - car.x) <= (wall.width/2 + car.width/2)) && (deformation > 180)) {
+    if (deformation < 100) {
+      car.velocityX = 0;
+      car.shapeColor = "green";
     }
 
   drawSprites();
